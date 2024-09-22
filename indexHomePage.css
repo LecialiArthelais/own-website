@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(243, 192, 214);
+  min-height: 2000px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(180, 66, 114);
+  border-bottom: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.navbar .navbar-logo {
+  color: white;
+  width: 100px;
+}
+
+.navbar .navbar-home a {
+  color: white;
+  font-size: 30px;
+}
+
+.navbar .navbar-menu a {
+  color: white;
+}
+
+.navbar .navbar-menu a:hover {
+  color: rgb(129, 218, 245);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(HomeBackground.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  filter: brightness(85%);
+  border-bottom: 2px solid white;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero .content .polaroid1,
+.hero .content .polaroid2,
+.hero .content .polaroid3 {
+  background-color: rgb(180, 66, 114);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.hero .content img {
+  display: block;
+  width: 100%;
+}
+
+.hero .content p {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.love-container {
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url("tullips.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: brightness(85%);
+  border-bottom: 2px solid white;
+}
+
+.love-container .heart {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.heart-hover {
+  display: none;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heart:hover .heart-hover {
+  display: block;
+}
+
+.heart:hover {
+  color: rgb(194, 61, 61);
+  cursor: pointer;
+}
